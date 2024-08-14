@@ -95,4 +95,74 @@ h6 {
 }
 
 
+blockquote {
+    text-align: justify;
+}
 
+
+
+.hero-image {
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: var(--attachment);
+}
+
+.hero-image-opacity {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--opacity-color);
+}
+
+.hero-image-title {
+    font-size: 6vw;
+    color: var(--hero-text-color);
+    font-weight: 700;
+}
+
+.hero-image-content {
+    width: 100%;
+    min-width: 320px;
+}
+
+
+
+.btn {
+    border-radius: .5rem;
+    padding: 1rem;
+    display: inline-block;
+    width: 200px;
+    height: auto;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--first-color);
+    position: relative;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.anim-bottom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: .25rem;
+    background-color: var(--second-color);
+    transition: width 1s ease, left .5s ease, right .5s ease;
+}
+
+.anim-bottom:hover:after {
+    width: 100%;
+}
+
+.to-left::after {
+    left: 0;
+}

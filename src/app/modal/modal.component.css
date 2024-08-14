@@ -1,0 +1,23 @@
+::ng-deep  .mdl-registro .modal-dialog{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.modal-xl {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modal-close svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--first-color);
+}
+

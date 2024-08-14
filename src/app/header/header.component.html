@@ -1,0 +1,42 @@
+<!-- <nav class="navbar navbar-expand-sm bg-light" >
+    <ul class="navbar-nav d-flex justify-content-between w-100"> 
+        <div class="d-flex">
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="acerca">Acerca</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="portafolio">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto">Contacto</a></li>
+        </div>
+
+    </ul>
+  </nav> -->
+
+
+
+<header class="header">
+    <section class="container">
+        <div class="logo">
+            <a href="">Oliver Hernandez</a>
+        </div>
+
+        <button class="menu-btn" (click)="menuCelFuction()">
+            <svg *ngIf="!menuCel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+            </svg>
+            <svg *ngIf="menuCel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+            </svg>
+        </button>
+
+        <nav class="menu"   [ngClass]="{ 'is-active': menuCel }">
+            <a class="home" href="">Home</a>
+            <a href="acerca">Acerca</a>
+            <a href="servicios">Servicios</a>
+            <a href="portafolio">Portafolio</a>
+            <a href="experiencia">Experiencia</a>
+            <a href="contacto">Contacto</a>
+        </nav>
+    </section>
+</header>

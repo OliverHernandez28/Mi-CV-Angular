@@ -1,0 +1,269 @@
+
+:root {
+    --first-color: #ff6f61;
+    --first-alpha-color: rgba(255, 111, 97, .75);
+    --second-color: #2b2d42;
+    --second-alpha-color: rgba(43, 45, 66, .75);
+    --third-color: #8d99ae;
+    --third-alpha-color: rgba(141, 153, 174, .75);
+
+
+    --white-color: #fff;
+    --gray-light-color: #f3f3f3;
+    --gray-color: #ccc;
+    --gray-dark-color: #666;
+    --black-color: #000;
+    --link-color: #509ee3;
+    --title-color: #333;
+    --text-color: #222;
+    --white-alpha-color: rgba(255, 255, 255, .5);
+    --black-alpha-color: rgba(0, 0, 0, .5);
+
+    --font: "Raleway", sans-serif;
+
+    --max-width: 1200px;
+    --header-height: 4rem;
+}
+
+
+html {
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: var(--link-color);
+    transition: all .05s ease-out;
+}
+
+a:hover {
+    opacity: .75;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+p {
+    line-height: 1.6;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h5 {
+    margin: 0;
+    font-size: .85rem;
+}
+
+h6 {
+    margin: 0;
+    font-size: .7rem;
+}
+
+
+blockquote {
+    text-align: justify;
+}
+
+
+
+.portafolio-card {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: thin solid var(--first-alpha-color);
+}
+
+.portafolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portafolio-card-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--first-alpha-color);
+    color: var(--white-color);
+    padding: 1rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .7s ease-in-out;
+}
+
+.portafolio-card:hover .portafolio-card-info {
+    opacity: 1;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.portafolio-card-info div {
+    padding: 1rem;
+    border: thin solid var(--white-color);
+    width: 100%;
+    height: 100%;
+}
+
+.portafolio-details {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: 1.2rem;
+}
+
+.portafolio-details b {
+    color: var(--first-color);
+}
+
+.portafolio-modal {
+    padding: .7rem;
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+}
+
+.portafolio-modal img {
+    max-width: 400px;
+}
+
+.portafolio-modal h3 {
+    border-bottom: medium solid var(--first-color);
+    padding: .5rem 0;
+    margin: .7rem auto;
+    color: var(--title-color);
+}
+.portafolio-details {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: 1.2rem;
+}
+
+.portafolio-details b {
+    color: var(--first-color);
+}
+
+.section {
+    padding: 2rem 1rem;
+}
+
+.section-title {
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    margin: 2rem auto;
+    padding: 0.5rem 1rem;
+    width: 250px;
+    text-align: center;
+    color: var(--title-color);
+}
+
+.modal-content {
+    position: relative;
+}
+
+.modal-content img{
+    display: none;
+}
+
+.portafolio-modal {
+    padding: .7rem;
+    max-width: 390px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-color);
+}
+
+.portafolio-modal img {
+    max-width: 400px;
+}
+
+.portafolio-modal h3 {
+    border-bottom: medium solid var(--first-color);
+    padding: .5rem 0;
+    margin: .7rem auto;
+    color: var(--title-color);
+}
+
+.portafolio-info {
+    margin-left: 1rem;
+    align-self: center;
+}
+
+@media screen and (min-width:768px) {
+    .portafolio>.container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .portafolio .section-title {
+        grid-column: span 3;
+    }
+
+    .portafolio-modal {
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+    .portafolio-info {
+        margin-left: 1rem;
+        align-self: center;
+    }
+
+    .portafolio-modal {
+        flex-direction: row;
+        max-width: 800px;
+    }
+    
+}
+
+
+
+@media screen and (min-width:1024px){
+    .portafolio>.container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .portafolio .section-title {
+        grid-column: span 3;
+    }
+    .modal-content img{
+        display: inline-block;
+    }
+}

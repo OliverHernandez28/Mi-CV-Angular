@@ -1,0 +1,293 @@
+<section id="portafolio" class="portafolio section ">
+    <div class="container">
+        <h2 class="section-title">Mis trabajos</h2>
+        <span (click)="modal(1)" class="portafolio-card">
+            <img style=" object-position: left top;" src="assets/portfolio-1.jpg" alt="Trabajo 1">
+            <aside class="portafolio-card-info">
+                <div>
+                    <h3>Computos-2024</h3>
+                    <br>
+                    Es un sistema que consiste en la suma de los resultados contenidos en las Actas de Escrutinio y
+                    Cómputo de las casillas en un Distrito Electoral o en una Circunscripción para obtener los
+                    resultados definitivos de la elección.
+
+                    Cuenta con apartados como recuento, recuento total, numeralia, tablero de avance, resultados,
+                    reportes,etc. Todo esto de acuerdo a la logica requerida.
+                </div>
+            </aside>
+        </span>
+        <span (click)="modal(2)" class="portafolio-card">
+            <img style=" object-position: left top;" src="assets/portfolio-2.jpg" alt="Trabajo 2">
+            <aside class="portafolio-card-info">
+                <div>
+                    <h3>Sistema de Reclutamiento de SEL o CAEL 2023-2024</h3>
+                    <br>
+                    Es un sistema que consiste en el registro de aspirantes para ser Supervisor/a Electoral Local o
+                    Capacitador/a-Asistente Electoral Local. Este sistema incluía un login de inicio que, si no
+                    contabas con una cuenta, tenía su formulario de registro. Posteriormente, una vez
+                    <i>logeado</i>,
+                    tenía varios apartados: uno para la subida de documentos requeridos, otro para notificaciones y
+                    otro para un video con un cuestionario de capacitación.
+                </div>
+            </aside>
+        </span>
+        <span (click)="modal(3)" class="portafolio-card">
+            <img src="assets/portfolio-5.jpg" alt="Trabajo 5">
+            <aside class="portafolio-card-info">
+                <div>
+                    <h3>SIGE SEL/CAEL</h3>
+                    <br>
+                    Este sistema consiste en varios módulos. El primer módulo consiste en una tabla con todos los
+                    usuarios registrados. Esta tabla cuenta con un sistema de paginación, número de elementos
+                    mostrados y, a su vez, un buscador. Cada registro de la tabla mostraba información del registro
+                    y, a su vez, tenías varios modales y botones para realizar ciertas acciones requeridas.
+                    El segundo módulo consiste en una tabla con usuarios, con ciertos filtros, igual con un sistema
+                    de paginación, número de elementos mostrados y, a su vez, un buscador. A su vez, cuenta con
+                    varios botones que descargan ciertos reportes requeridos.
+
+                </div>
+
+            </aside>
+        </span>
+
+        <span (click)="modal(4)" class="portafolio-card">
+            <img style=" object-position: left top;" src="assets/portfolio-4.jpg" alt="Trabajo 4">
+            <aside class="portafolio-card-info">
+                <div>
+                    <h3>Candidatos: ¡CONÓCELES, Supervisor!</h3>
+                    Es un sistema que consiste en 3 tabs donde filtran por candidatos y en cada tab cuenta con su
+                    tabla la cual
+                    cuenta con un sistema de paginación, número de elementos
+                    mostrados y, a su vez, un buscador. A su vez un menu de acciones y modales para hacer ciertos
+                    eventos como por ejemplo mandar notificaciones al candidato.
+                </div>
+            </aside>
+        </span>
+        <span (click)="modal(5)" class="portafolio-card">
+            <img src="assets/portfolio-6.jpg" alt="Trabajo 6">
+            <aside class="portafolio-card-info">
+
+                <div>
+                    <h3>Candidatos: ¡CONÓCELES, Privado!</h3>
+                    <br>
+                    Este sistema consiste en que el candidato registrará su información, que posteriormente se
+                    consultará en el público. Inicia cuando, por medio de un correo electrónico que se le envía al
+                    candidato, le llega una URL con un hash que permitía su registro en el primer paso.
+                    Posteriormente, tiene dos apartados: uno con dos formularios, pero que a su vez solo mostraba
+                    uno; es decir, una vez llenado el formulario 1, se cargaba el segundo. El segundo apartado era
+                    un sistema de notificaciones para el candidato, ya que desde el sistema de supervisión podían
+                    rechazar su información por algún motivo, y en esta notificación le comentaban qué cambiar.
+                </div>
+            </aside>
+        </span>
+        <span (click)="modal(6)" class="portafolio-card">
+            <img style=" object-position: left top;" src="assets/portfolio-3.jpg" alt="Trabajo 3">
+            <aside class="portafolio-card-info">
+                <div>
+                    <h3>Candidatos: ¡CONÓCELES, Público!</h3>
+                    <br>
+                    Es un sistema de consulta de la historia profesional y/o laboral, trayectoria política,
+                    académica, las principales propuestas y el cuestionario de identidad de las personas candidatas
+                    que participan en el Proceso Electoral Local Concurrente 2023-2024. Consiste en seleccionar
+                    varios
+                    filtros de búsqueda como por ejemplo: partido politico, tipo de candidatura, cargo, municipio,
+                    rango de edad, grado academico, genero ,etc. , puedes encontrar a tu candidato y, al dar
+                    <i>click</i>, te redirecciona a
+                    una ventana donde ves su información completa.
+                </div>
+            </aside>
+        </span>
+
+    </div>
+</section>
+
+ 
+
+
+
+
+  <app-modal #trabajo1 
+  [modalConfig]="{modalTitle: 'Trabajo 1', dismissButtonLabel: 'dismiss', closeButtonLabel: 'cerrar',showDismiss:false, showClose:false}">
+
+  <div class="modal-content">
+    <article class="portafolio-modal">
+        <img src="assets/portfolio-1.jpg" alt="Trabajo 1">
+        <div class="portafolio-info">
+            <h3>Computos-2024</h3>
+            <p> Es un sistema que consiste en la suma de los resultados contenidos en las Actas de Escrutinio y
+                Cómputo de las casillas en un Distrito Electoral o en una Circunscripción para obtener los
+                resultados definitivos de la elección.
+
+                Cuenta con apartados como recuento, recuento total, numeralia, tablero de avance, resultados,
+                reportes,etc. Todo esto de acuerdo a la logica requerida.</p>
+            <aside class="portafolio-details">
+                <small><b>Cliente:</b></small>
+                <small>IEPC Jalisco</small>
+                <small><b>Fecha:</b></small>
+                <small>01/05/2024</small>
+                <small><b>Tipo:</b></small>
+                <small>Privado</small>
+                <small><b>Enlace:</b></small>
+                <small><a href="https://computos.iepcjalisco.mx/login" target="_blank"
+                        rel="noopener">Computos-2024</a></small>
+            </aside>
+        </div>
+    </article>
+</div>
+
+</app-modal>
+
+<app-modal #trabajo2 
+[modalConfig]="{modalTitle: 'Trabajo 2', dismissButtonLabel: 'dismiss', closeButtonLabel: 'cerrar',showDismiss:false, showClose:false}">
+<div class="modal-content">
+  
+    <br>
+    <article class="portafolio-modal">
+        <img src="assets/portfolio-2.jpg" alt="Trabajo 2">
+        <div class="portafolio-info">
+            <h3>Sistema de Reclutamiento SEL / CAEL 2023-2024</h3>
+            <p> Es un sistema que consiste en el registro de aspirantes para ser Supervisor/a Electoral Local o
+                Capacitador/a-Asistente Electoral Local. Este sistema incluía un login de inicio que, si no
+                contabas con una cuenta, tenía su formulario de registro. Posteriormente, una vez
+                <i>logeado</i>,
+                tenía varios apartados: uno para la subida de documentos requeridos, otro para notificaciones y
+                otro para un video con un cuestionario de capacitación.
+            </p>
+            <aside class="portafolio-details">
+                <small><b>Cliente:</b></small>
+                <small>IEPC Jalisco</small>
+                <small><b>Fecha:</b></small>
+                <small>05/03/2024</small>
+                <small><b>Tipo:</b></small>
+                <small>Privado</small>
+                <small><b>Enlace:</b></small>
+                <small><a href="https://reclutamientoseycae.iepcjalisco.mx/register" target="_blank"
+                        rel="noopener">IEPC Recluta</a></small>
+            </aside>
+        </div>
+    </article>
+</div>
+</app-modal>
+
+<app-modal #trabajo3 
+[modalConfig]="{modalTitle: 'Trabajo 3', dismissButtonLabel: 'dismiss', closeButtonLabel: 'cerrar',showDismiss:false, showClose:false}">
+<div class="modal-content">
+  
+    <article class="portafolio-modal">
+        <img src="assets/portfolio-3.jpg" alt="Trabajo 3">
+        <div class="portafolio-info">
+            <h3>Candidatos:¡CONÓCELES, <br> Público!</h3>
+            <p> Es un sistema de consulta de la historia profesional y/o laboral, trayectoria política,
+                académica, las principales propuestas y el cuestionario de identidad de las personas candidatas
+                que participan en el Proceso Electoral Local Concurrente 2023-2024. Consiste en seleccionar
+                varios
+                filtros de búsqueda como por ejemplo: partido politico, tipo de candidatura, cargo, municipio,
+                rango de edad, grado academico, genero ,etc. , puedes encontrar a tu candidato y, al dar
+                <i>click</i>, te redirecciona a
+                una ventana donde ves su información completa.
+            </p>
+            <aside class="portafolio-details">
+                <small><b>Cliente:</b></small>
+                <small>IEPC Jalisco</small>
+                <small><b>Fecha:</b></small>
+                <small>15/03/2024</small>
+                <small><b>Tipo:</b></small>
+                <small>Publico</small>
+                <small><b>Enlace:</b></small>
+                <small><a href="https://conoceles.iepcjalisco.mx/home" target="_blank" rel="noopener">CONÓCELES,
+                        Público</a></small>
+            </aside>
+        </div>
+    </article>
+</div>
+</app-modal>
+
+<app-modal #trabajo4 
+[modalConfig]="{modalTitle: 'Trabajo 4', dismissButtonLabel: 'dismiss', closeButtonLabel: 'cerrar',showDismiss:false, showClose:false}">
+<div class="modal-content">
+  
+    <article class="portafolio-modal">
+        <img src="assets/portfolio-4.jpg" alt="Trabajo 4">
+        <div class="portafolio-info">
+            <h3>Candidatos: ¡CONÓCELES, <br> Supervisor!</h3>
+            <p> Es un sistema que consiste en 3 tabs donde filtran por candidatos y en cada tab cuenta con su
+                tabla la cual
+                cuenta con un sistema de paginación, número de elementos
+                mostrados y, a su vez, un buscador. A su vez un menu de acciones y modales para hacer ciertos
+                eventos como por ejemplo mandar notificaciones al candidato.</p>
+            <aside class="portafolio-details">
+                <small><b>Cliente:</b></small>
+                <small>IEPC Jalisco</small>
+                <small><b>Fecha:</b></small>
+                <small>01/04/2024</small>
+                <small><b>Tipo:</b></small>
+                <small>Privado</small>
+                <small><b>Enlace:</b></small>
+                <small><a href="http://" target="_blank" rel="noopener"></a></small>
+            </aside>
+        </div>
+    </article>
+</div>
+</app-modal>
+
+<app-modal #trabajo5 
+[modalConfig]="{modalTitle: 'Trabajo 5', dismissButtonLabel: 'dismiss', closeButtonLabel: 'cerrar',showDismiss:false, showClose:false}">
+<div class="modal-content">
+  
+    <article class="portafolio-modal">
+        <img src="assets/portfolio-5.jpg" alt="Trabajo 5">
+        <div class="portafolio-info">
+            <h3>SIGE SEL/CAEL</h3>
+            <p>Este sistema consiste en varios módulos. El primer módulo consiste en una tabla con todos los
+                usuarios registrados. Esta tabla cuenta con un sistema de paginación, número de elementos
+                mostrados y, a su vez, un buscador. Cada registro de la tabla mostraba información del registro
+                y, a su vez, tenías varios modales y botones para realizar ciertas acciones requeridas.
+                El segundo módulo consiste en una tabla con usuarios, con ciertos filtros, igual con un sistema
+                de paginación, número de elementos mostrados y, a su vez, un buscador. A su vez, cuenta con
+                varios botones que descargan ciertos reportes requeridos.</p>
+            <aside class="portafolio-details">
+                <small><b>Cliente:</b></small>
+                <small>IEPC Jalisco</small>
+                <small><b>Fecha:</b></small>
+                <small>15/03/2024</small>
+                <small><b>Tipo:</b></small>
+                <small>Privado</small>
+                <small><b>Enlace:</b></small>
+                <small><a href="http://" target="_blank" rel="noopener"></a></small>
+            </aside>
+        </div>
+    </article>
+</div>
+</app-modal>
+
+<app-modal #trabajo6 
+[modalConfig]="{modalTitle: 'Trabajo 6', dismissButtonLabel: 'dismiss', closeButtonLabel: 'cerrar',showDismiss:false, showClose:false}">
+<div class="modal-content">
+    <article class="portafolio-modal">
+        <img src="assets/portfolio-6.jpg" alt="Trabajo 6">
+        <div class="portafolio-info">
+            <h3>Candidatos: ¡CONÓCELES,<br>
+                Privado!</h3>
+            <p> Este sistema consiste en que el candidato registrará su información, que posteriormente se
+                consultará en el público. Inicia cuando, por medio de un correo electrónico que se le envía al
+                candidato, le llega una URL con un hash que permitía su registro en el primer paso.
+                Posteriormente, tiene dos apartados: uno con dos formularios, pero que a su vez solo mostraba
+                uno; es decir, una vez llenado el formulario 1, se cargaba el segundo. El segundo apartado era
+                un sistema de notificaciones para el candidato.</p>
+            <aside class="portafolio-details">
+                <small><b>Cliente:</b></small>
+                <small>IEPC Jalisco</small>
+                <small><b>Fecha:</b></small>
+                <small>01/04/2024</small>
+                <small><b>Tipo:</b></small>
+                <small>tipo de proyecto</small>
+                <small><b>Enlace:</b></small>
+                <small><a href="http://" target="_blank" rel="noopener"></a></small>
+            </aside>
+        </div>
+    </article>
+</div>
+</app-modal>
+
+
+
