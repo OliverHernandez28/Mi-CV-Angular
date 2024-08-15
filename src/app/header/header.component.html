@@ -31,13 +31,13 @@
         </button>
 
         <nav class="menu"   [ngClass]="{ 'is-active': menuCel }">
-            <a class="home" href="">Home</a>
-            <a href="acerca">Acerca</a>
-            <a href="servicios">Servicios</a>
-            <a href="portafolio">Portafolio</a>
-            <a href="experiencia">Experiencia</a>
-            <a href="contacto">Contacto</a>
-            <a href="extra">Extra</a>
+            <a [ngClass]="{seleccionado: actual=='/home' || actual==''}" class="home" href="home">Home</a>
+            <a [ngClass]="{seleccionado: actual=='/acerca'}" href="acerca">Acerca</a>
+            <a [ngClass]="{seleccionado: actual=='/servicios'}" href="servicios">Servicios</a>
+            <a [ngClass]="{seleccionado: actual=='/portafolio'}" href="portafolio">Portafolio</a>
+            <a [ngClass]="{seleccionado: actual=='/experiencia'}" href="experiencia">Experiencia</a>
+            <a [ngClass]="{seleccionado: actual=='/contacto'}" href="contacto">Contacto</a>
+            <a [ngClass]="{seleccionado: actual=='/extra'}" href="extra">Extra</a>
         </nav>
     </section>
 </header>

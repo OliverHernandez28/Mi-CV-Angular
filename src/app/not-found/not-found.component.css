@@ -1,0 +1,100 @@
+.fondo {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../../public/assets/galaxia.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* Cambio aquí */
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    font-size: 10vw;
+    text-shadow: 0 1px 0 var(--first-color), 0 2px 0 var(--first-color), 0 3px 0 var(--first-color),
+        0 4px 0 var(--first-color), 0 5px 0 var(--first-color), 0 6px 0 var(--first-color),
+        0 7px 0 var(--first-color), 0 8px 0 var(--first-color);
+}
+
+h2 {
+    text-shadow: 0 1px 0 var(--first-color), 0 2px 0 var(--first-color), 0 3px 0 var(--first-color),
+        0 4px 0 var(--first-color), 0 5px 0 var(--first-color);
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cuatro04 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cohete {
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+
+.cohete:hover {
+    animation: flotar 2s infinite ease-in-out;
+}
+
+@keyframes flotar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+
+}
+
+.ufo {
+    position: absolute;
+    width: 100px;
+    bottom: 20px;
+    animation: uf1 5s infinite ease-in-out;
+}
+
+.ufo2 {
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    animation: uf2 5s infinite ease-in-out;
+}
+
+@keyframes uf1 {
+    from {
+        transform: translateX(-100px) translateY(0);
+    }
+    to {
+        transform: translateX(1950px) translateY(-100px);
+    }
+}
+
+@keyframes uf2 {
+    from {
+        transform: translateX(-100px) translateY(0);
+    }
+    to {
+        transform: translateX(1950px) translateY(100px);
+    }
+}

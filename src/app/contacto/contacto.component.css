@@ -219,5 +219,5 @@
 
 
 .validacion {
-    border: thin solid red !important;
+    border-bottom: thin solid red !important;
 }

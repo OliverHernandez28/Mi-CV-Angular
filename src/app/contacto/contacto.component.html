@@ -80,7 +80,9 @@
         </article>
 
         <form class="contact-form box-shadow-1" #form="ngForm" (ngSubmit)="enviarCorreco(form)">
-            <input 
+            <input [ngClass]="{'validacion': validaciones.name}"
+
+            (keyup)="valida(form.controls['name'],1)"
                 [(ngModel)]="correo.name" 
                 name="name" 
                 autocomplete="off" 
@@ -88,10 +90,8 @@
                 placeholder="Ingresa tu nombre *"
                 title="Nombre sólo acepta letras y espacios en blanco" 
                 pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" 
-                required class="invalid"><!-- 
-                [ngClass]="{'validacion': form.controls['name'].invalid && form.controls['name'].touched }"
-             -->
-            <input 
+                required >
+            <input (keyup)="valida(form.controls['email'],2)" [ngClass]="{'validacion': validaciones.email}"
                 [(ngModel)]="correo.email" 
                 name="email" 
                 autocomplete="off" 
@@ -100,9 +100,8 @@
                 title="Ingresa un Email valido" 
                 pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
                 required >
-               <!--  [ngClass]="{'validacion': form.controls['email'].invalid && form.controls['email'].touched }"> -->
             
-            <textarea 
+            <textarea (keyup)="valida(form.controls['comments'],3)" [ngClass]="{'validacion': validaciones.comments}"
                 [(ngModel)]="correo.comments" 
                 name="comments" 
                 cols="50" 

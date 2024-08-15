@@ -71,6 +71,10 @@
 }
 
 
+.seleccionado{
+    color: white !important;
+}
+
 
 @media screen and (min-width:1024px) {
 

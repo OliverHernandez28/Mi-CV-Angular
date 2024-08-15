@@ -24,6 +24,12 @@ export class ContactoComponent {
     email: '',
     comments: '',
   };
+
+  validaciones = {
+    name: false,
+    email: false,
+    comments: false,
+  }
   enviarCorreco(event: any) {
     if (event.valid) {
       Swal.fire({
@@ -92,4 +98,14 @@ export class ContactoComponent {
       });
     }
   }
+
+  valida(event: any, dato: number) {
+    if (dato == 1) !event.valid ? this.validaciones.name = true : this.validaciones.name = false
+    if (dato == 2) !event.valid ? this.validaciones.email = true : this.validaciones.email = false
+    if (dato == 3) !event.valid ? this.validaciones.comments = true : this.validaciones.comments = false
+  }
+
+
+
+
 }

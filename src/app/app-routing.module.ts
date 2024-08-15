@@ -9,8 +9,9 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { ExtraComponent } from './extra/extra.component';
 
-const routes: Routes = [
-  {path:'',component:HomeComponent},
+export const routes: Routes = [
+  {path:'home',component:HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'acerca',component:AcercaComponent},
   {path:'servicios',component:ServiciosComponent},
   {path:'portafolio',component:PortafolioComponent},
