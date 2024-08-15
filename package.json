@@ -10,6 +10,9 @@
     "serve:ssr:mi-cv-angular": "node dist/mi-cv-angular/server/server.mjs"
   },
   "private": true,
+  "overrides": {
+    "undici": "6.19.2"
+  },
   "dependencies": {
     "@angular/animations": "^18.1.0",
     "@angular/common": "^18.1.0",
@@ -22,8 +25,12 @@
     "@angular/router": "^18.1.0",
     "@angular/ssr": "^18.1.4",
     "@ng-bootstrap/ng-bootstrap": "^17.0.0",
+    "@popperjs/core": "^2.11.8",
+    "@sweetalert2/ngx-sweetalert2": "^12.4.0",
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",
+    "jquery": "^3.7.1",
+    "popper": "^1.0.1",
     "rxjs": "~7.8.0",
     "sweetalert2": "^11.12.4",
     "tslib": "^2.3.0",

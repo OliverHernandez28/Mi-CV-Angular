@@ -14,7 +14,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ModalComponent } from './modal/modal.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { ExtraComponent } from './extra/extra.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    ModalComponent
+    ModalComponent,
+    ExtraComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [
     provideClientHydration(),
+    provideHttpClient(withFetch()),
     ServiciosComponent
   ],
   bootstrap: [AppComponent]

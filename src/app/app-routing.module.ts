@@ -7,6 +7,7 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { PortafolioComponent } from './portafolio/portafolio.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { ExtraComponent } from './extra/extra.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
@@ -15,6 +16,7 @@ const routes: Routes = [
   {path:'portafolio',component:PortafolioComponent},
   {path:'experiencia',component:ExperienciaComponent},
   {path:'contacto',component:ContactoComponent},
+  {path:'extra',component:ExtraComponent},
   {path:'**',component:NotFoundComponent}
 ];
 
