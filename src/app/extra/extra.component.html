@@ -1,4 +1,151 @@
-<div class="cargando">
+<section id="servicios" class="section bg-gray-light  full-lg-screen" >
+    <div class="container ">
+        <h2 class="section-title">Cosas extras</h2>
+        <h5 style="text-align: center;">En este apartado encontraras cosas que hago de hobby, que probablemente no
+            tienen
+            nada que ver con mi portafolio.</h5>
+        <br>
+        <h5>Debes seleccionar una opción</h5>
 
-</div>
-<h3 style="text-align: center; margin-bottom: 29vh;">En proceso...</h3>
+<button (click)="seleccion=1" class="btn btn-secondary m-1">Mi musica Favorita</button>
+<button (click)="seleccion=2" class="btn btn-secondary">Aprender verbos en ingles</button>
+<!--    <ul style="display: inline-flex; width: 100%;">
+            <li style="margin-right: 5%;"><a href="/extra/#musica">Mi musica favorita</a></li>
+            <li><a href="/extra/#verbos">Aprender verbos en ingles</a></li>
+        </ul> -->
+
+        <article *ngIf="seleccion==1" style="position: relative;z-index: 555;">
+            <div id="musica">
+                <h2 style="text-align: center;"> Mi música favorita</h2>
+                <div class="padre" [ngClass]="{play:playList}">
+                    <div style="background: black; height: 100%;">
+                        <h2>Musica</h2>
+                        <p>Las canciones que más escucho.</p>
+                        <div class="linear" [ngClass]="{dance:playList}">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                class="bi bi-music-note" viewBox="0 0 16 16">
+                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2" />
+                                <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z" />
+                            </svg> <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                class="bi bi-music-note" viewBox="0 0 16 16">
+                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2" />
+                                <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
+                                class="bi bi-music-note" viewBox="0 0 16 16">
+                                <path d="M9 13c0 1.105-1.12 2-2.5 2S4 14.105 4 13s1.12-2 2.5-2 2.5.895 2.5 2" />
+                                <path fill-rule="evenodd" d="M9 3v10H8V3z" />
+                                <path d="M8 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 13 2.22V4L8 5z" />
+                            </svg>
+                        </div>
+                        <div class="controles">
+                            <i class="fa fa-backward" (click)="anterior()" aria-hidden="true"></i>
+                            <i [class]="playList? 'fa fa-pause':'fa fa-play'" title="Play Music" (click)="playAlbum()"
+                                aria-hidden="true"></i>
+                            <i class="fa fa-forward" (click)="siguiente()" aria-hidden="true"></i>
+                        </div>
+                        <h3>OH</h3>
+                    </div>
+                    <div class="disco" [ngClass]="{play2:playList}">
+                        <img style="border-radius: 50%;" [src]="imagenDisco" width="40%" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="graid">
+
+                <div *ngFor="let cancion of canciones; let i=index;">
+                    <button style="width:50%;" (click)="play(i)" [title]="cancion.bandera?'Reproducir':'Pausar'"
+                        class="btn btn-primary" [ngClass]="!cancion.bandera ?'btn-success':'btn-primary'"> <i
+                            [ngClass]="cancion.bandera?'fa fa-play':'fa fa-pause'" aria-hidden="true"> </i>
+                    </button>
+                    <button title="Reiniciar" style="width: 50%;" (click)="reiniciar(i)" class="btn btn-secondary"><i
+                            class="fa fa-step-backward" aria-hidden="true"></i>
+                    </button>
+                    <br>
+                    <p>Autor:<b>{{cancion.autor}}</b> Canción: <b>{{cancion.nombre}}</b> </p>
+                    <audio loop #audio [src]="cancion.url"></audio>
+                </div>
+
+            </div>
+
+        </article>
+        <br>
+        <article *ngIf="seleccion==2">
+            <h2 style="text-align: center;"> Aprender verbos en inglés</h2>
+
+            <br>
+            <small>
+                <ul>
+                    <li>No puedes mandar a revision un verbo si el campo esta vacio.</li>
+                    <li>Los verbos saldran de acuerdo a la cantidad mostrada y en orden alfabetico.</li>
+                    <li>Al tercer intento erroneo se habilitara un boton con la respuesta.</li>
+                    <li>Un verbo puede tener varios significados, en estos ejercicios estamos colocando el mas conocido.
+                    </li>
+                </ul>
+            </small>
+            <br><br>
+
+            <div class="row">
+                <div class="  col-lg-6 col-sm-12 ">
+                    <div class="input-group">
+                        <select (change)="siguienteBoton()" [(ngModel)]="numeroVerbos" [disabled]="banderaContador" class="form-control" name="num"
+                            id="num">
+                            <option value=0 selected>Seleccione el numero de verbos a practicar</option>
+                            <option  value=10>10</option>
+                            <option value=20>20</option>
+                            <option value=30>30</option>
+                            <option value=40>40</option>
+                            <option value=450>Todos</option>
+                          </select>
+                        <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                            (click)="siguienteBoton()">Siguiente</button> -->
+                    </div>
+                </div>
+
+            </div>
+
+
+            <form action="">
+                <div *ngIf="banderaContador" class="verbs">
+                    <div *ngFor="let objeto of verbos | slice:numeroVerbosInicio:numeroVerbos;let i=index;">
+                        <div style="padding: 1rem; position: relative;" [ngClass]="{
+                            'success': objeto.satus == 2, 'error': objeto.satus == 3}">
+
+                            <i *ngIf="objeto.revelar == 3 && objeto.satus!=2" (click)="solucionar(i)"
+                                class="fa fa-eye revelar" style="position: absolute; right: 1rem;"
+                                title="Revelar respuesta" aria-hidden="true"></i>
+
+                            <label [for]="'name' + i"><b>{{i+1}}. {{ objeto.ingles }}</b></label>
+
+                            <input [disabled]="objeto.satus==2" autocomplete="off" [(ngModel)]="objeto.input"
+                                [name]="'name' + i" [id]="'name' + i" class="form-control" type="text"
+                                placeholder="Ingresa la traducción">
+
+                            <button [disabled]="objeto.satus==2" style="width: 50%;" title="Pista" (click)="pista(i)"
+                                class="btn btn-secondary">
+                                <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            </button>
+
+                            <button [disabled]="objeto.satus==2" style="width: 50%;" (click)="check(i)"
+                                class="btn btn-light" title="Calificar">
+                                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </form>
+
+             <div *ngIf="banderaContador && numeroVerbos <=450" class="row">
+                <div class="col-12 ">
+                        <button class="btn btn-outline-secondary" style="float: right;" type="button" id="button-addon2"
+                            (click)="siguientesVerbosBoton()">Siguientes {{valorAuxiliar}} </button>
+                </div>
+
+            </div> 
+        </article>
+    </div>
+</section>

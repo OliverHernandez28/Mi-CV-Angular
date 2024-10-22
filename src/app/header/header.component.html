@@ -37,7 +37,7 @@
             <a [ngClass]="{seleccionado: actual=='/portafolio'}" href="portafolio">Portafolio</a>
             <a [ngClass]="{seleccionado: actual=='/experiencia'}" href="experiencia">Experiencia</a>
             <a [ngClass]="{seleccionado: actual=='/contacto'}" href="contacto">Contacto</a>
-            <a [ngClass]="{seleccionado: actual=='/extra'}" href="extra">Extra</a>
+            <a [ngClass]="{seleccionado: actual.includes('extra')}" href="extra">Extra</a>
         </nav>
     </section>
 </header>

@@ -7,11 +7,28 @@ import { Router } from '@angular/router';
   styleUrl: './not-found.component.css'
 })
 export class NotFoundComponent {
-constructor(private route: Router){}
-  volver(){
+  constructor(private route: Router) { }
+  casa = false
 
 
-    setTimeout(()=>{
-      this.route.navigate(['/home'])},3000)
+  volver() {
+
+    this.casa = true
+    setTimeout(() => {
+      this.route.navigate(['/home'])
+      this.casa=false
+    }, 3000)
   }
+
+
+
+
+
+
+
+
+
+
+
 }
+

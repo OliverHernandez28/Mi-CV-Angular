@@ -2,7 +2,7 @@
     background-image: var(--hero-image);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position:20%  50%;
     background-attachment: var(--attachment);
 }
 
@@ -62,4 +62,11 @@
 
 .to-left::after {
     left: 0;
+}
+
+
+@media screen and (min-width:1024px) {
+    .hero-image {    
+        background-position: center;
+    }
 }

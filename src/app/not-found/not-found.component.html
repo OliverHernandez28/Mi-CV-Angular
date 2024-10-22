@@ -2,16 +2,16 @@
 <img class="ufo2" src="assets/ufo.png" alt="OVNI">
 
 <div class="fondo">
-    <div class="cuatro04">
+    <div style="z-index: 999;" class="cuatro04">
        <h1>4</h1>
-       <img style="z-index: 999;" src="assets/saturno.png" alt="0">
+       <img src="assets/saturno.png" alt="0">
        <h1>4</h1>
     </div>
 <div>
-    <h2>¡PAGE NOT FOUND!</h2>
+    <h2 style="z-index: 999;">¡PAGE NOT FOUND!</h2>
 </div>
 <div style=" max-width: 200px;">
-    <button (click)="volver()" title="Volver a Inicio" class="cohete"><img class="cohete" src="assets/nave.png" alt=""><h3>HOME</h3></button>
+    <button (click)="volver()"  title="Volver a Inicio" class="cohete flotar"><img class="cohete" [ngClass]="{goHome:casa}" src="assets/nave.png" alt=""><h3>HOME</h3></button>
 </div>
     
 </div>

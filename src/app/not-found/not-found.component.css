@@ -49,7 +49,9 @@ img {
     border: none;
 }
 
-.cohete:hover {
+
+
+.flotar:hover {
     animation: flotar 2s infinite ease-in-out;
 }
 
@@ -97,4 +99,17 @@ img {
     to {
         transform: translateX(1950px) translateY(100px);
     }
+}
+
+
+.goHome{
+    animation: toHome 3s infinite ease-in-out;
+}
+
+
+@keyframes toHome {
+    10%{
+        transform: translateX(-10%) translateY(10%) rotate(-50deg);
+    }
+    100%{ transform: translateX(-300%) translateY(-300%) rotate(-50deg);}
 }

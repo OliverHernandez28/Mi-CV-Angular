@@ -1,0 +1,802 @@
+[
+    {
+        "ingles": "ABIDE",
+        "español": ["HABITAR", "MORAR", "TOLERAR"],
+        "pista": ["Con la idea de vivir en un lugar.", "También puede referirse a aceptar o tolerar algo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ABSORB",
+        "español": ["ABSORBER"],
+        "pista": ["Proceso de tomar en algo, como un líquido en una esponja.", "Cuando se adquiere conocimiento"],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ADD",
+        "español": ["AÑADIR"],
+        "pista": ["Es un verbo que se utiliza cuando se quiere incrementar una cantidad."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ADVANCE",
+        "español": ["AVANZAR"],
+        "pista": ["Este verbo se refiere a moverse hacia adelante o progresar.", "Se puede usar en contextos de desarrollo o mejora."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "AGREE",
+        "español": ["ESTAR DE ACUERDO", "ACORDAR", "ACCEDER"],
+        "pista": ["Este verbo se utiliza cuando dos o más personas tienen la misma opinión."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ANSWER",
+        "español": ["CONTESTAR", "RESPONDER"],
+        "pista": ["Este verbo se usa cuando se responde a una pregunta."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "APPEAR",
+        "español": ["APARECER"],
+        "pista": ["Este verbo se refiere a hacerse visible o manifestarse.", "Se utiliza cuando alguien o algo se muestra de repente."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ARISE",
+        "español": ["LEVANTARSE", "SURGIR"],
+        "pista": ["Este verbo se relaciona con levantarse, especialmente de la cama.", "También se usa cuando algo surge o se presenta, como un problema o una oportunidad."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ARRIVE",
+        "español": ["LLEGAR"],
+        "pista": ["Este verbo se utiliza cuando alguien llega a un lugar."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ASK",
+        "español": ["PREGUNTAR"],
+        "pista": ["Este verbo se usa cuando deseas obtener información de alguien."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ASSIGN",
+        "español": ["ASIGNAR"],
+        "pista": ["Este verbo se utiliza cuando se da una tarea o responsabilidad a alguien.", "También se refiere a la acción de determinar un valor o un lugar para algo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ASSIST",
+        "español": ["ASISTIR"],
+        "pista": ["Este verbo se refiere a ayudar a alguien en una tarea o actividad."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ATTACH",
+        "español": ["UNIR", "JUNTAR", "SUJETAR", "PEGAR"],
+        "pista": ["Este verbo se usa cuando se une o se conecta algo a otra cosa.", "Se relaciona con la acción de pegar o sujetar un objeto a otro."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "ATTEND",
+        "español": ["ATENDER"],
+        "pista": ["También puede referirse a ayudar o cuidar a alguien."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "AWAKE",
+        "español": ["DESPERTARSE"],
+        "pista": ["Este verbo se refiere al acto de dejar de dormir."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "AWARD",
+        "español": ["OTORGAR"],
+        "pista": ["Este verbo se usa cuando se otorgan premios o reconocimientos.", "Se relaciona con la acción de conceder algo a alguien por un logro."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BAKE",
+        "español": ["HORNEAR"],
+        "pista": ["Este verbo se utiliza en la cocina para referirse a cocinar en un horno.", "Se asocia comúnmente con la preparación de pan y pasteles."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BATHE",
+        "español": ["BAÑAR"],
+        "pista": ["Este verbo se refiere a la acción de lavarse el cuerpo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BE",
+        "español": ["SER", "ESTAR"],
+        "pista": ["Este verbo es uno de los más fundamentales en inglés, utilizado para expresar existencia.", "Se usa para describir estados o condiciones."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BEAR",
+        "español": ["SOPORTAR", "AGUANTAR"],
+        "pista": ["Este verbo se relaciona con soportar o tolerar algo difícil."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BEAT",
+        "español": ["VENCER", "BATIR"],
+        "pista": ["Este verbo se utiliza cuando se vence a alguien en una competencia."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BECOME",
+        "español": ["LLEGAR A SER", "PONERSE", "VOLVERSE"],
+        "pista": ["Este verbo describe el proceso de transformación o cambio en algo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BEFALL",
+        "español": ["SUCEDER", "ACONTECER", "OCURRIR"],
+        "pista": ["Este verbo se refiere a que algo sucede o ocurre, a menudo de manera inesperada."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BEGIN",
+        "español": ["COMENZAR", "EMPEZAR"],
+        "pista": ["Este verbo se utiliza para indicar el inicio de una acción o evento."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BEHOLD",
+        "español": ["CONTEMPLAR", "MIRAR"],
+        "pista": ["Este verbo se refiere a mirar o contemplar algo con atención."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BELIEVE",
+        "español": ["CREER"],
+        "pista": ["Este verbo se utiliza cuando se tiene fe o confianza en algo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BELONG",
+        "español": ["PERTENECER"],
+        "pista": ["Este verbo se refiere a ser parte de un grupo o lugar."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BEND",
+        "español": ["DOBLARSE", "ENCORVARSE"],
+        "pista": ["Se relaciona con la acción de doblar."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BET",
+        "español": ["APOSTAR"],
+        "pista": ["Este verbo se refiere a arriesgar dinero en un juego o apuesta."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BID",
+        "español": ["MANDAR", "ORDENAR"],
+        "pista": ["Se refiere a ordenar o mandar algo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BIND",
+        "español": ["UNIR", "LIGAR", "ATAR", "AMARRAR"],
+        "pista": ["Este verbo se refiere a unir o atar cosas juntas."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BITE",
+        "español": ["MORDER", "PICAR"],
+        "pista": ["Este verbo se usa para describir la acción de usar los dientes para cortar algo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BLEED",
+        "español": ["SANGRAR"],
+        "pista": ["Este verbo se refiere a la pérdida de sangre."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BLOW",
+        "español": ["SOPLAR", "VENTEAR"],
+        "pista": ["Este verbo se utiliza para describir la acción de mover aire con fuerza."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BLUSH",
+        "español": ["SONROJAR"],
+        "pista": ["Se utiliza para describir el cambio de color en las mejillas."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BOIL",
+        "español": ["HERVIR"],
+        "pista": ["Este verbo se utiliza para describir el proceso de calentar un líquido hasta que burbujea."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BORROW",
+        "español": ["PEDIR PRESTADO"],
+        "pista": ["Este verbo se refiere a pedir algo prestado a alguien."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BOTHER",
+        "español": ["MOLESTAR"],
+        "pista": ["Este verbo se utiliza para describir la acción de molestar a alguien."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BREAK",
+        "español": ["ROMPER"],
+        "pista": ["Este verbo se refiere a la acción de romper algo en partes."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BREED",
+        "español": ["CRIAR", "EDUCAR"],
+        "pista": ["Se relaciona con la educación o formación de personas."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BRING",
+        "español": ["TRAER", "LLEVAR"],
+        "pista": ["Este verbo se utiliza para describir la acción de llevar algo a un lugar."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BROADCAST",
+        "español": ["DIFUNDIR", "EMITIR"],
+        "pista": ["Este verbo se refiere a la acción de transmitir información a un público amplio."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BROIL",
+        "español": ["ASAR"],
+        "pista": ["Este verbo se usa para describir la acción de cocinar alimentos expuestos al calor directo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BROWN",
+        "español": ["TOSTAR"],
+        "pista": ["Se utiliza en la cocina para mejorar el sabor y la textura."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BRUSH",
+        "español": ["CEPILLAR"],
+        "pista": ["Este verbo se utiliza para describir la acción de limpiar o arreglar algo con un cepillo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BUILD",
+        "español": ["CONSTRUIR", "FUNDAR", "EDIFICAR"],
+        "pista": ["Este verbo se refiere a la acción de construir o crear algo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BURN",
+        "español": ["QUEMAR", "INCENDIAR"],
+        "pista": ["Este verbo se usa para describir la acción de consumir algo con fuego."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BURST",
+        "español": ["ESTALLAR", "REVENTAR"],
+        "pista": ["Este verbo se refiere a la acción de estallar o reventar."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "BUY",
+        "español": ["COMPRAR", "ADQUIRIR"],
+        "pista": ["Este verbo se utiliza para describir la acción de adquirir algo a cambio de dinero."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CALL",
+        "español": ["LLAMAR"],
+        "pista": ["Este verbo se utiliza para describir la acción de comunicarse con alguien por teléfono."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CALM",
+        "español": ["CALMAR"],
+        "pista": ["Significa tranquilizar a alguien.", "Se usa en situaciones de estrés."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CAMP",
+        "español": ["ACAMPAR"],
+        "pista": ["Implica pasar la noche al aire libre.", "Se hace en la naturaleza."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CANCEL",
+        "español": ["CANCELAR"],
+        "pista": ["Significa anular algo planeado.", "Se usa en reservas y citas."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CARE",
+        "español": ["PREOCUPAR", "IMPORTAR"],
+        "pista": ["Implica preocuparse por alguien o algo.", "Se usa en relaciones personales."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CARRY",
+        "español": ["LLEVAR"],
+        "pista": ["Significa transportar algo.", "Se usa con objetos físicos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CAST",
+        "español": ["MOLDEAR", "REPARTIR", "ECHAR", "TIRAR"],
+        "pista": ["Implica dar forma a algo.", "Se usa en contextos de actuación y moldes."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CATCH",
+        "español": ["ATRAPAR", "COGER", "TOMAR", "AGARRAR"],
+        "pista": ["Significa agarrar algo en movimiento.", "Se usa en deportes y juegos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CELEBRATE",
+        "español": ["CELEBRAR"],
+        "pista": ["Implica conmemorar un evento especial.", "Se hace con fiestas y reuniones."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CHANGE",
+        "español": ["CAMBIAR"],
+        "pista": ["Significa hacer algo diferente.", "Se usa en contextos de transformación."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CHARGE",
+        "español": ["CARGAR"],
+        "pista": ["Implica poner energía en un dispositivo.", "Se usa con baterías y cuentas."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CHEAT",
+        "español": ["ENGAÑAR"],
+        "pista": ["Significa actuar de manera deshonesta.", "Se usa en juegos y exámenes."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CHECK",
+        "español": ["COMPROBAR", "CHEQUEAR", "VERIFICAR"],
+        "pista": ["Significa examinar algo.", "Se usa para asegurarse de que todo esté bien."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CHEER",
+        "español": ["VICTOREAR", "ALEGRAR", "ANIMAR", "APLAUDIR"],
+        "pista": ["Implica mostrar apoyo o alegría.", "Se hace en eventos deportivos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CHEW",
+        "español": ["MASTICAR"],
+        "pista": ["Significa romper comida con los dientes.", "Se hace antes de tragar."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CHILL",
+        "español": ["RESFRIAR", "ENFRIAR"],
+        "pista": ["Significa bajar la temperatura de algo.", "Se usa con bebidas y alimentos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CHOOSE",
+        "español": ["ESCOGER", "ELEGIR"],
+        "pista": ["Implica tomar una decisión entre opciones.", "Se usa en elecciones y selecciones."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CIRCLE",
+        "español": ["RODEAR", "HACER UN CIRCULO"],
+        "pista": ["Significa formar una figura redonda.", "Se usa en dibujos y descripciones."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CLAP",
+        "español": ["APLAUDIR"],
+        "pista": ["Significa golpear las manos para mostrar aprobación.", "Se hace en conciertos y eventos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CLEAN",
+        "español": ["LIMPIAR"],
+        "pista": ["Significa eliminar suciedad o desorden.", "Se usa en el hogar y en trabajos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CLIMB",
+        "español": ["SUBIR"],
+        "pista": ["Implica ascender a un lugar más alto.", "Se usa en montañas y escaleras."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CLING",
+        "español": ["AGARRAR", "AFERRARSE", "ADHERIRSE"],
+        "pista": ["Implica sujetarse a algo con fuerza.", "Se puede referir a objetos o emociones."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CLOSE",
+        "español": ["CERRAR"],
+        "pista": ["Significa sellar algo.", "Se utiliza para puertas y ventanas."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CLOTHE",
+        "español": ["VESTIR", "ARROPAR"],
+        "pista": ["Implica poner ropa a alguien.", "Se hace para cubrir el cuerpo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COLLECT",
+        "español": ["COLECCIONAR"],
+        "pista": ["Significa reunir objetos similares.", "Se puede hacer con monedas, estampillas, etc."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COME",
+        "español": ["VENIR"],
+        "pista": ["Implica moverse hacia un lugar.", "Se usa para indicar dirección."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COMMENT",
+        "español": ["COMENTAR"],
+        "pista": ["Significa expresar una opinión.", "Se usa en discusiones y redes sociales."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COMPLAIN",
+        "español": ["QUEJARSE"],
+        "pista": ["Implica expresar insatisfacción.", "Se hace sobre un problema o una situación."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COMPLETE",
+        "español": ["COMPLETAR"],
+        "pista": ["Significa finalizar algo.", "Se usa para tareas o proyectos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CONTINUE",
+        "español": ["CONTINUAR"],
+        "pista": ["Implica seguir adelante.", "Se usa para indicar que algo no ha terminado."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CONVINCE",
+        "español": ["CONVENCER"],
+        "pista": ["Significa persuadir a alguien.", "Se usa en discusiones y argumentos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COOK",
+        "español": ["COCINAR"],
+        "pista": ["Implica preparar alimentos.", "Se puede hacer al fuego o al horno."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COOL",
+        "español": ["ENFRIAR", "REFRESCAR"],
+        "pista": ["Se hace para bajar la temperatura.", "Puede referirse a bebidas o alimentos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COPY",
+        "español": ["COPIAR"],
+        "pista": ["Significa replicar algo.", "Se usa en contextos de documentos y archivos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COST",
+        "español": ["COSTAR"],
+        "pista": ["Indica el precio de algo.", "Se utiliza en contextos de compras."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COUNT",
+        "español": ["CONTAR"],
+        "pista": ["Implica enumerar elementos.", "Se usa para verificar cantidades."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "COVER",
+        "español": ["CUBRIR"],
+        "pista": ["Se usa para proteger algo.", "Puede referirse a objetos o espacios."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CREEP",
+        "español": ["ARRASTRARSE", "DESLIZARSE", "GATEAR"],
+        "pista": ["Implica moverse lentamente.", "Se puede hacer en silencio o con cuidado."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CROSS",
+        "español": ["CRUZAR", "ATRAVESAR"],
+        "pista": ["Significa pasar de un lado a otro.", "Se usa comúnmente al caminar por calles."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CRY",
+        "español": ["LLORAR"],
+        "pista": ["Es una respuesta emocional.", "Puede ocurrir por tristeza o alegría."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "CUT",
+        "español": ["CORTAR"],
+        "pista": ["Implica dividir algo en partes.", "Se usa con herramientas como cuchillos o tijeras."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DANCE",
+        "español": ["BAILAR"],
+        "pista": ["Es una actividad que se hace al ritmo de la música.", "Puede ser individual o en grupo."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DEAL",
+        "español": ["NEGOCIAR", "COMERCIAR"],
+        "pista": ["Involucra llegar a un acuerdo.", "Se relaciona con transacciones comerciales."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DECIDE",
+        "español": ["DECIDIR"],
+        "pista": ["Implica tomar una elección.", "Se hace después de evaluar opciones."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DECLARE",
+        "español": ["DECLARAR"],
+        "pista": ["Se usa para hacer un anuncio oficial.", "Puede usarse en contextos legales."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DECORATE",
+        "español": ["DECORAR"],
+        "pista": ["Se hace para embellecer un espacio.", "Involucra el uso de adornos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DEFEND",
+        "español": ["DEFENDER"],
+        "pista": ["Implica proteger a alguien o algo.", "Se usa en contextos legales y deportivos."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DEMONSTRATE",
+        "español": ["DEMOSTRAR"],
+        "pista": ["Se usa para mostrar algo de manera práctica.", "Puede incluir ejemplos o pruebas."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DEPEND",
+        "español": ["DEPENDER"],
+        "pista": ["Significa estar sujeto a algo.", "Se usa para describir relaciones de necesidad."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DESCEND",
+        "español": ["DESCENDER", "BAJAR"],
+        "pista": ["Es lo opuesto a ascender.", "Puede referirse a bajar físicamente o en rango."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    },
+    {
+        "ingles": "DESCRIBE",
+        "español": ["DESCRIBIR"],
+        "pista": ["Implica dar detalles sobre algo.", "Se utiliza para comunicar características."],
+        "input": "",
+        "satus": 1,
+        "revelar": 0
+    }
+]
