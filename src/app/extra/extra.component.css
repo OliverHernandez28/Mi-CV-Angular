@@ -317,15 +317,45 @@ h6 {
     gap: 20px;
 }
 
+.peliculas {
+    display: flex;
+    width: 100%;
+    height: 22vh;
+    transition: margin-top .5s ease;
+}
+
+.peliculas img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: fill;
+    opacity: .8;
+    transition: all .5s ease;
+}
+
+.peliculas:hover {
+    margin-top: 3ch;
+}
+
+.peliculas img:hover {
+    /* object-fit: fill; */
+    transform: scale(1.1);
+    z-index: 999;
+    filter: contrast(120%);
+    opacity: 1;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5%;
+}
+
 @media screen and (min-width:768px) {
 
 
-    
-.padre .controles {
-    position: relative;
-    bottom: 0;
-    left: 0;
-}
+
+    .padre .controles {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
 
 
     .graid {
@@ -355,6 +385,9 @@ h6 {
     .padre h3 {
         bottom: 10px;
     }
+    .peliculas {
+        height: 42vh;
+    }
 }
 
 @media screen and (min-width:1024px) {
@@ -365,6 +398,10 @@ h6 {
 
     .verbs {
         grid-template-columns: repeat(5, auto);
+    }
+
+    .peliculas {
+        height: 42vh;
     }
 }
 
@@ -404,3 +441,4 @@ h6 {
     font-weight: bold;
     /* Texto en negrita */
 }
+

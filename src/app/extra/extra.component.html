@@ -1,15 +1,21 @@
-<section id="servicios" class="section bg-gray-light  full-lg-screen" >
+<section id="servicios" class="section bg-gray-light  full-lg-screen">
     <div class="container ">
         <h2 class="section-title">Cosas extras</h2>
         <h5 style="text-align: center;">En este apartado encontraras cosas que hago de hobby, que probablemente no
             tienen
-            nada que ver con mi portafolio.</h5>
+            nada que ver con mi portafolio. Pero lo hago por practicar o por gusto.</h5>
         <br>
         <h5>Debes seleccionar una opción</h5>
 
-<button (click)="seleccion=1" class="btn btn-secondary m-1">Mi musica Favorita</button>
-<button (click)="seleccion=2" class="btn btn-secondary">Aprender verbos en ingles</button>
-<!--    <ul style="display: inline-flex; width: 100%;">
+        <div class="mb-4">
+            <button (click)="seleccion=1" class="btn  m-1" [ngClass]="seleccion==1?'btn-success':'btn-secondary'">Mi
+                música Favorita</button>
+            <button (click)="seleccion=2" class="btn  m-1" [ngClass]="seleccion==2?'btn-success':'btn-secondary'">Mis
+                peliculas Favorita</button>
+            <button (click)="seleccion=9" class="btn  m-1"
+                [ngClass]="seleccion==9?'btn-success':'btn-secondary'">Aprender verbos en ingles</button>
+        </div>
+        <!--    <ul style="display: inline-flex; width: 100%;">
             <li style="margin-right: 5%;"><a href="/extra/#musica">Mi musica favorita</a></li>
             <li><a href="/extra/#verbos">Aprender verbos en ingles</a></li>
         </ul> -->
@@ -19,7 +25,7 @@
                 <h2 style="text-align: center;"> Mi música favorita</h2>
                 <div class="padre" [ngClass]="{play:playList}">
                     <div style="background: black; height: 100%;">
-                        <h2>Musica</h2>
+                        <h2>Música</h2>
                         <p>Las canciones que más escucho.</p>
                         <div class="linear" [ngClass]="{dance:playList}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
@@ -71,8 +77,18 @@
             </div>
 
         </article>
-        <br>
         <article *ngIf="seleccion==2">
+            <h2 style="text-align: center;">Peliculas favoritas</h2>
+            <section class="peliculas">
+                <img (click)="resumen(1,'Atracción peligrosa')" src="assets/imgPelis/atraccionP.jpg" alt="">
+                <img (click)="resumen(2,'Bienvenidos al ayer')" src="assets\imgPelis\bienvenidos_al_ayer.jpeg" alt="">
+                <img (click)="resumen(3,'El contador')" src="assets\imgPelis\contador.jpg" alt="">
+                <img (click)="resumen(4,'El lobo de Wall Street')" src="assets\imgPelis\loboW.jpg" alt="">
+                <img (click)="resumen(5,'Volver al futuro')" src="assets\imgPelis\volver1.jpg" alt="">
+                <img (click)="resumen(6,'Volver al futuro II')" src="assets\imgPelis\volver.jpg" alt="">
+            </section>
+        </article>
+        <article *ngIf="seleccion==9">
             <h2 style="text-align: center;"> Aprender verbos en inglés</h2>
 
             <br>
@@ -90,15 +106,15 @@
             <div class="row">
                 <div class="  col-lg-6 col-sm-12 ">
                     <div class="input-group">
-                        <select (change)="siguienteBoton()" [(ngModel)]="numeroVerbos" [disabled]="banderaContador" class="form-control" name="num"
-                            id="num">
+                        <select (change)="siguienteBoton()" [(ngModel)]="numeroVerbos" [disabled]="banderaContador"
+                            class="form-control" name="num" id="num">
                             <option value=0 selected>Seleccione el numero de verbos a practicar</option>
-                            <option  value=10>10</option>
+                            <option value=10>10</option>
                             <option value=20>20</option>
                             <option value=30>30</option>
                             <option value=40>40</option>
                             <option value=450>Todos</option>
-                          </select>
+                        </select>
                         <!-- <button class="btn btn-outline-secondary" type="button" id="button-addon2"
                             (click)="siguienteBoton()">Siguiente</button> -->
                     </div>
@@ -139,13 +155,26 @@
                 </div>
             </form>
 
-             <div *ngIf="banderaContador && numeroVerbos <=450" class="row">
+            <div *ngIf="banderaContador && numeroVerbos <=450" class="row">
                 <div class="col-12 ">
-                        <button class="btn btn-outline-secondary" style="float: right;" type="button" id="button-addon2"
-                            (click)="siguientesVerbosBoton()">Siguientes {{valorAuxiliar}} </button>
+                    <button class="btn btn-outline-secondary" style="float: right;" type="button" id="button-addon2"
+                        (click)="siguientesVerbosBoton()">Siguientes {{valorAuxiliar}} </button>
                 </div>
 
-            </div> 
+            </div>
         </article>
     </div>
 </section>
+
+
+<app-modal #peli
+    [modalConfig]="{modalTitle: tituloPelicula, dismissButtonLabel: 'dismiss', closeButtonLabel: 'cerrar',showDismiss:false, showClose:false}">
+
+    <div style="text-align: justify;">
+        {{sipnosisTexto}}
+    </div>
+    <h4 style="text-align: center;">TRILLER</h4>
+    <div class="m-3" [innerHTML]="html"></div>
+
+
+</app-modal>
